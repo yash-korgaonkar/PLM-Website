@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/plm-logo.svg';
 import './Navbar.css';
+import { ChevronDownIcon } from './Icons';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -89,7 +90,7 @@ const Navbar = () => {
           >
             <span className={`navbar-link ${isActive('/signup') ? 'active' : ''}`}>
               Sign Up
-              <span className={`dropdown-arrow ${isSignUpOpen ? 'open' : ''}`}>▼</span>
+              <span className={`dropdown-arrow ${isSignUpOpen ? 'open' : ''}`}><ChevronDownIcon size={14} strokeWidth={2.5} /></span>
             </span>
             <ul className={`dropdown-menu ${isSignUpOpen ? 'show' : ''}`}>
               <li>

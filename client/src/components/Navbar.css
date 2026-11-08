@@ -7,13 +7,13 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--gray-200);
+  transition: box-shadow 0.2s ease;
 }
 
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-container {
@@ -60,8 +60,11 @@
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  transition: all 0.3s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .navbar-link:hover {
@@ -72,23 +75,6 @@
 .navbar-link.active {
   color: var(--tennis-green);
   background-color: var(--gray-100);
-}
-
-.navbar-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--tennis-green), var(--accent-gold));
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.navbar-link:hover::after,
-.navbar-link.active::after {
-  width: 80%;
 }
 
 .navbar-toggle {
@@ -151,14 +137,11 @@
     padding: 1rem;
     text-align: center;
     border-radius: 0.5rem;
-    background: var(--white);
-    box-shadow: var(--shadow-sm);
+    justify-content: center;
   }
 
   .navbar-link:hover {
     background: var(--gray-50);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
   }
 }
 
@@ -168,10 +151,10 @@
 }
 
 .dropdown-arrow {
-  display: inline-block;
-  margin-left: 0.4rem;
-  font-size: 0.7rem;
-  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
 }
 
 .dropdown-arrow.open {
@@ -213,7 +196,7 @@
   padding: 0.75rem 1.25rem;
   color: var(--text-medium);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
   cursor: pointer;
   position: relative;
 }
@@ -221,7 +204,6 @@
 .dropdown-link:hover {
   background: var(--gray-50);
   color: var(--tennis-green);
-  padding-left: 1.5rem;
 }
 
 .dropdown-link.disabled {
@@ -276,7 +258,4 @@
     padding: 0.75rem 1rem;
   }
 
-  .dropdown-link:hover {
-    padding-left: 1rem;
-  }
 } 

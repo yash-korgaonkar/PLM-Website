@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import { PlusIcon } from './Icons';
 
 /**
  * FAQ Data Configuration
@@ -55,7 +56,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
         aria-expanded={isOpen}
       >
         <span className="faq-question-text">{question}</span>
-        <span className="faq-icon">{isOpen ? '-' : '+'}</span>
+        <span className="faq-icon"><PlusIcon size={16} strokeWidth={2.25} /></span>
       </button>
       <div className={`faq-answer ${isOpen ? 'faq-answer-open' : ''}`}>
         <p>{answer}</p>

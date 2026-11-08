@@ -11,7 +11,7 @@ html {
 }
 
 /* Focus styles for accessibility */
-*:focus {
+*:focus-visible {
   outline: 2px solid var(--tennis-green, #2d5a27);
   outline-offset: 2px;
 }
@@ -114,13 +114,7 @@ html {
   background: white;
   border-radius: 12px;
   padding: 24px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 /* Image styles */

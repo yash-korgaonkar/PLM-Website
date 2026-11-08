@@ -6,8 +6,13 @@
 
 /* FAQ Hero Section */
 .faq-hero {
-  background: linear-gradient(135deg, var(--tennis-green, #2d5a27) 0%, var(--tennis-green-light, #4a7c59) 100%);
-  padding: 4rem 0;
+  background-color: var(--tennis-green);
+  background-image:
+    linear-gradient(rgba(45, 90, 39, 0.86), rgba(45, 90, 39, 0.86)),
+    url('../assets/hero-court.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  padding: 6rem 0 4rem;
   text-align: center;
   color: white;
 }
@@ -16,7 +21,7 @@
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.02em;
 }
 
 .faq-page-subtitle {
@@ -36,6 +41,7 @@
 .faq-contact-section {
   padding: 4rem 0;
   background: white;
+  border-top: 1px solid var(--gray-200, #e2e8f0);
 }
 
 .faq-contact-content {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Calendar.css';
+import { CalendarIcon, ClockIcon, MapPinIcon, RepeatIcon, CalendarDaysIcon, ChevronLeftIcon, ChevronRightIcon } from '../components/Icons';
 
 const CalendarPage = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -110,8 +111,8 @@ const CalendarPage = () => {
     <div className="calendar-page">
       <div className="calendar-hero">
         <div className="container">
-          <h1 className="calendar-title">Program Schedule</h1>
-          <p className="calendar-subtitle">
+          <h1 className="calendar-title" data-aos="fade-up" data-aos-delay="80">Program Schedule</h1>
+          <p className="calendar-subtitle" data-aos="fade-up" data-aos-delay="160">
             Sunday tennis sessions from January through March
           </p>
         </div>
@@ -120,7 +121,7 @@ const CalendarPage = () => {
       <div className="calendar-content">
         <div className="container">
           <div className="calendar-grid">
-            <div className="calendar-main">
+            <div className="calendar-main" data-aos="fade-up">
               <div className="calendar-wrapper">
                 <div className="custom-calendar">
                   {/* Calendar Header */}
@@ -130,7 +131,7 @@ const CalendarPage = () => {
                       onClick={() => navigateMonth(-1)}
                       aria-label="Previous month"
                     >
-                      ‹
+                      <ChevronLeftIcon size={20} />
                     </button>
                     <h2 className="month-year">{getMonthName(currentDate)}</h2>
                     <button 
@@ -138,7 +139,7 @@ const CalendarPage = () => {
                       onClick={() => navigateMonth(1)}
                       aria-label="Next month"
                     >
-                      ›
+                      <ChevronRightIcon size={20} />
                     </button>
                   </div>
 
@@ -194,7 +195,7 @@ const CalendarPage = () => {
               </div>
             </div>
 
-            <div className="calendar-sidebar">
+            <div className="calendar-sidebar" data-aos="fade-up" data-aos-delay="120">
               <div className="selected-date-info">
                 <h3>Selected Date</h3>
                 <div className="date-display">
@@ -204,7 +205,7 @@ const CalendarPage = () => {
                   session.toDateString() === selectedDate.toDateString()
                 ) ? (
                   <div className="session-details">
-                    <h4>🎾 Sunday Tennis Session</h4>
+                    <h4><CalendarDaysIcon size={20} /> Sunday Tennis Session</h4>
                     <p><strong>Time:</strong> 4:00 PM - 5:00 PM</p>
                     <p><strong>Location:</strong> Franklin Lakes Racquet Club</p>
                     <p><strong>Type:</strong> Weekly Sunday Program</p>
@@ -218,6 +219,9 @@ const CalendarPage = () => {
 
               <div className="upcoming-sessions">
                 <h3>Upcoming Sessions</h3>
+                {getUpcomingSessions().length === 0 && (
+                  <p className="no-session">New session dates will be posted soon.</p>
+                )}
                 {getUpcomingSessions().map((session, index) => (
                   <div key={index} className="upcoming-session">
                     <div className="session-date">
@@ -237,25 +241,25 @@ const CalendarPage = () => {
               <div className="program-info">
                 <h3>Program Information</h3>
                 <div className="info-item">
-                  <span className="info-icon">📅</span>
+                  <span className="info-icon"><CalendarIcon size={20} /></span>
                   <div>
                     <strong>Season:</strong> January - March
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon">⏰</span>
+                  <span className="info-icon"><ClockIcon size={20} /></span>
                   <div>
                     <strong>Time:</strong> 4:00 PM - 5:00 PM
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon">📍</span>
+                  <span className="info-icon"><MapPinIcon size={20} /></span>
                   <div>
                     <strong>Location:</strong> Franklin Lakes Racquet Club
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon">🎾</span>
+                  <span className="info-icon"><RepeatIcon size={20} /></span>
                   <div>
                     <strong>Schedule:</strong> Every Sunday
                   </div>

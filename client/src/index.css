@@ -16,10 +16,12 @@ body {
 /* Modern color palette - Tennis themed */
 :root {
   --tennis-green: #2d5a27;
+  --tennis-green-dark: #234a1f;
   --tennis-green-light: #4a7c59;
   --tennis-green-lighter: #6b8e6b;
   --accent-gold: #d4af37;
   --accent-gold-light: #f4d03f;
+  --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
   --text-dark: #1a202c;
   --text-medium: #4a5568;
   --text-light: #718096;
@@ -47,27 +49,27 @@ body {
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;
-  transition: all 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
-  border: none;
+  border: 2px solid transparent;
   text-align: center;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--tennis-green), var(--tennis-green-light));
+  background: var(--tennis-green);
+  border-color: var(--tennis-green);
   color: var(--white);
-  box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  background: var(--tennis-green-dark);
+  border-color: var(--tennis-green-dark);
 }
 
 .btn-secondary {
   background: var(--white);
   color: var(--tennis-green);
-  border: 2px solid var(--tennis-green);
+  border-color: var(--tennis-green);
 }
 
 .btn-secondary:hover {
@@ -104,6 +106,10 @@ html {
 
 /* Focus styles for accessibility */
 *:focus {
+  outline: none;
+}
+
+*:focus-visible {
   outline: 2px solid var(--tennis-green);
   outline-offset: 2px;
 }
@@ -169,13 +175,7 @@ input:focus, textarea:focus, select:focus {
   background: var(--white);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: var(--shadow-md);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Image styles */
@@ -206,49 +206,16 @@ input:focus, textarea:focus, select:focus {
 .mb-10 { margin-bottom: 2.5rem; }
 .mb-12 { margin-bottom: 3rem; }
 
-/* Animation classes */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+/* Gold call-to-action button */
+.btn-gold {
+  background: var(--accent-gold-light);
+  border-color: var(--accent-gold-light);
+  color: var(--tennis-green);
 }
 
-.fade-in.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.slide-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 0.8s ease;
-}
-
-.slide-in-left.animate {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.slide-in-right {
-  opacity: 0;
-  transform: translateX(50px);
-  transition: all 0.8s ease;
-}
-
-.slide-in-right.animate {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.scale-in {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.8s ease;
-}
-
-.scale-in.animate {
-  opacity: 1;
-  transform: scale(1);
+.btn-gold:hover {
+  background: #e9c32f;
+  border-color: #e9c32f;
 }
 
 /* Responsive design */
