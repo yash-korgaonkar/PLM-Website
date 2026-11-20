@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d50159eb.css",
-    "main.js": "/static/js/main.cadd0359.js",
+    "main.css": "/static/css/main.c0e1dde1.css",
+    "main.js": "/static/js/main.dd0ab604.js",
     "static/media/IMG_9304.JPG": "/static/media/IMG_9304.55d09ee7c3bdeb05c33b.JPG",
     "static/media/IMG_9257.JPG": "/static/media/IMG_9257.5c82d0a9c2d867e275f1.JPG",
     "static/media/IMG_9301.JPG": "/static/media/IMG_9301.c8cb34c718978df8c8ae.JPG",
     "static/media/IMG_9252.JPG": "/static/media/IMG_9252.6b95853b8fab447e5bb2.JPG",
+    "static/media/hero-court.jpg": "/static/media/hero-court.b01793c5337711505683.jpg",
     "static/media/plm-logo.svg": "/static/media/plm-logo.c7575999d9e9ed77eee598bf99834cfc.svg",
     "index.html": "/index.html",
-    "main.d50159eb.css.map": "/static/css/main.d50159eb.css.map",
-    "main.cadd0359.js.map": "/static/js/main.cadd0359.js.map"
+    "main.c0e1dde1.css.map": "/static/css/main.c0e1dde1.css.map",
+    "main.dd0ab604.js.map": "/static/js/main.dd0ab604.js.map"
   },
   "entrypoints": [
-    "static/css/main.d50159eb.css",
-    "static/js/main.cadd0359.js"
+    "static/css/main.c0e1dde1.css",
+    "static/js/main.dd0ab604.js"
   ]
 }
