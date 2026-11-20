@@ -120,7 +120,7 @@ const Home = () => {
               Athlete Sign Up
             </a>
             <a
-              href="https://forms.gle/g9Cgfbo2Mixnjy8n9"
+              href="https://forms.gle/QQTtrtjAc4B65nys6"
               target="_blank"
               rel="noopener noreferrer"
               className="btn hero-btn"
@@ -278,7 +278,7 @@ const Home = () => {
             </p>
             <div className="cta-buttons" data-aos="fade-up" data-aos-delay="150">
               <a
-                href="https://forms.gle/g9Cgfbo2Mixnjy8n9"
+                href="https://forms.gle/QQTtrtjAc4B65nys6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-gold btn-large"
