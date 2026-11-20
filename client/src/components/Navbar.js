@@ -95,7 +95,7 @@ const Navbar = () => {
             <ul className={`dropdown-menu ${isSignUpOpen ? 'show' : ''}`}>
               <li>
                 <a 
-                  href="https://forms.gle/QQTtrtjAc4B65nys6" 
+                  href="https://forms.gle/qBwv1yG82oFoRCfLA" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="dropdown-link"
@@ -106,7 +106,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScE1W0pijbXJkpvf9As8mimb0yn2c_AaJvuk0o52AqooApgIg/viewform" 
+                  href="https://forms.gle/oVty9GHSvXmdtfCGA" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="dropdown-link"

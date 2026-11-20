@@ -83,11 +83,17 @@ const About = () => {
                 you can make a tax-deductible donation or inquire about sponsorship opportunities by contacting us directly.
               </p>
               <div className="donation-address-box">
-                <h4>Send Donations To:</h4>
+                <h4>Pay by Check</h4>
                 <p>
                   Project Lovematch<br />
                   PO Box 64<br />
                   Allendale, NJ 07401
+                </p>
+              </div>
+              <div className="donation-address-box">
+                <h4>Pay with Zelle</h4>
+                <p>
+                  <a href="mailto:projectlovematchtennis@gmail.com">projectlovematchtennis@gmail.com</a>
                 </p>
               </div>
             </div>

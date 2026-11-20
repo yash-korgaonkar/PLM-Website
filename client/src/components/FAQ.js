@@ -19,7 +19,7 @@ const faqData = [
   },
   {
     question: "Does the program cost any money for athletes?",
-    answer: "Yes, the program does have a nominal fee per athlete to help cover the costs of court rental, equipment, and other expenses."
+    answer: "Yes, the program does have a nominal fee per athlete to help cover the costs of court rental, equipment, and other expenses. Fees can be paid by check (mailed to Project Lovematch, PO Box 64, Allendale, NJ 07401) or via Zelle to projectlovematchtennis@gmail.com."
   },
   {
     question: "When does the program run?",
@@ -35,7 +35,7 @@ const faqData = [
   },
   {
     question: "How can I support the program?",
-    answer: "You can support Project Lovematch by making a tax-deductible donation. We are a 501(c)(3) organization. Donations can be sent to: Project Lovematch, PO Box 64, Allendale, NJ 07401."
+    answer: "You can support Project Lovematch by making a tax-deductible donation. We are a 501(c)(3) organization. You can mail a check to Project Lovematch, PO Box 64, Allendale, NJ 07401, or send a donation via Zelle to projectlovematchtennis@gmail.com."
   },
   {
     question: "Where is the program held?",

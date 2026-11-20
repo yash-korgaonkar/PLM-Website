@@ -112,7 +112,7 @@ const Home = () => {
           </p>
           <div className="hero-buttons" data-aos="fade-up" data-aos-delay="300">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScE1W0pijbXJkpvf9As8mimb0yn2c_AaJvuk0o52AqooApgIg/viewform"
+              href="https://forms.gle/oVty9GHSvXmdtfCGA"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-gold"
@@ -120,7 +120,7 @@ const Home = () => {
               Athlete Sign Up
             </a>
             <a
-              href="https://forms.gle/QQTtrtjAc4B65nys6"
+              href="https://forms.gle/qBwv1yG82oFoRCfLA"
               target="_blank"
               rel="noopener noreferrer"
               className="btn hero-btn"
@@ -278,7 +278,7 @@ const Home = () => {
             </p>
             <div className="cta-buttons" data-aos="fade-up" data-aos-delay="150">
               <a
-                href="https://forms.gle/QQTtrtjAc4B65nys6"
+                href="https://forms.gle/qBwv1yG82oFoRCfLA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-gold btn-large"
@@ -317,14 +317,26 @@ const Home = () => {
               PLM is a 501(c)(3) tax-exempt organization and any amount is welcome! Sponsorships are also
               available upon request.
             </p>
-            <div className="donation-info-box">
-              <h4>Send Donations To</h4>
-              <p className="donation-address">
-                Project Lovematch<br />
-                PO Box 64<br />
-                Allendale, NJ 07401
-              </p>
+            <div className="donation-options">
+              <div className="donation-info-box">
+                <h4>Pay by Check</h4>
+                <p className="donation-address">
+                  Project Lovematch<br />
+                  PO Box 64<br />
+                  Allendale, NJ 07401
+                </p>
+              </div>
+              <div className="donation-info-box">
+                <h4>Pay with Zelle</h4>
+                <p className="donation-address">
+                  <a href="mailto:projectlovematchtennis@gmail.com">projectlovematchtennis@gmail.com</a>
+                </p>
+                <p className="donation-note">Add Project Lovematch as a Zelle recipient using this email</p>
+              </div>
             </div>
+            <p className="donation-note donation-note-center">
+              Both options work for athlete registration fees and donations.
+            </p>
           </div>
 
           <div className="sponsors-section" data-aos="fade-up">

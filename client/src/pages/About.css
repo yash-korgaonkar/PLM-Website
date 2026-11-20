@@ -189,6 +189,26 @@
   font-weight: 600;
 }
 
+.donation-address-box {
+  vertical-align: top;
+}
+
+.donation-address-box + .donation-address-box {
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .donation-address-box + .donation-address-box {
+    margin-left: 0;
+  }
+}
+
+.donation-address-box a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
 .donation-address-box p {
   color: var(--text-dark);
   line-height: 1.7;
